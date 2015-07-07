@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/contentStyle.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css">
+#gallery { width:1000px; height:600px; margin:0 auto; position:relative; font-family:verdana, arial, sans-serif; background:#fff; }
+#gallery #slides { position:absolute; right:10px; top:0; height:600px; width:92px; overflow:hidden; text-align:center; z-index:500; }
+#gallery #slides div { width:92px; height:550px; position:relative; padding-top:40px; }
+#gallery #slides div ul { padding:0; margin:0; list-style:none; width:92px; height:550px }
+#gallery #slides div ul li { float:left; padding:3px 0; width:92px; height:69px; }
+#gallery #slides div ul li a { display:block; width:92px; height:69px; float:left; }
+#gallery #slides div ul li a b { display:none; }
+#gallery #slides div ul li a.previous { background:url(image/gallery/up.png) no-repeat center center; }
+#gallery #slides div ul li a.next { background:url(image/gallery/down.png) no-repeat center center;  margin-top:18px;}
+#gallery #slides div ul li a img { display:block; width:92px; height:69px; border:0; }
+#gallery #slides div ul li img.blank { margin:0 auto; padding-top:11px; }
+#gallery #slides div ul li a:focus { outline:0; }
+#gallery #fullsize { position:absolute; left:0; top:0; height:610px; width:900px; overflow:hidden; text-align:center; z-index:200; }
+#gallery #fullsize div { width:900px; height:610px; padding-top:20px; position:relative; }
+#gallery #fullsize div img { clear:both; display:block; margin:0 auto; border:1px solid #eee; width:850px; height:560px; position:relative; background:#fff; padding:10px; }
+#gallery #fullsize div h3 { padding:10px 0 0 0; margin:0; font-size:18px; }
+#gallery #fullsize div p { padding:5px 135px; margin:0; font-size:12px; line-height:18px; }
+</style>
+</head>
+<body>
+    <div id="wrapper">
+    
+        <div id="menu-wrapper">
+        <img src="image/bg.png" class="alignleft" alt="" width="255" height="80" />
+            <div id="menu">
+                <ul>
+                    <li><a href="Main.htm">HOME</a></li>
+                    <li ><a href="Forum.htm">FORUM</a></li>
+                    <li><a href="Event.htm">EVENTS</a></li>
+                    <li class="current_page_item"><a href="Gallery.htm">GALLERY</a></li>
+                    <li><a href="Committee.htm">COMMITTEE</a></li>
+                    <li><a href="Contact.htm">CONTACT</a></li>
+                    <li ><a href="Bookticket.htm" style=" font-size:12px"><strong style="color: Red; font-size:12px">book</strong>ticket</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="maincontent" style=" height:650px;">
+        <div id="gallery">
+  <div id="slides">
+    <div id="slide1">
+      <ul>
+        <li><img class="blank" src="image/gallery/upx.png" alt="" /></li>
+        <li><a href="#pic2"><img src="image/gallery/Picture2.jpg" alt="" /></a></li>
+        <li><a href="#pic3"><img src="image/gallery/Picture3.jpg" alt="" /></a></li>
+        <li><a href="#pic4"><img src="image/gallery/Picture4.jpg" alt="" /></a></li>
+        <li><a href="#pic5"><img src="image/gallery/Picture5.jpg" alt="" /></a></li>
+        <li><a href="#pic6"><img src="image/gallery/Picture6.jpg" alt="" /></a></li>
+        <li><a href="#slide2" class="next"><b>Next</b></a></li>
+      </ul>
+    </div>
+    <div id="slide2">
+      <ul>
+        <li><a href="#slide1" class="previous"><b>Previous</b></a></li>
+        <li><a href="#pic3"><img src="image/gallery/Picture3.jpg" alt="" /></a></li>
+        <li><a href="#pic4"><img src="image/gallery/Picture4.jpg" alt="" /></a></li>
+        <li><a href="#pic5"><img src="image/gallery/Picture5.jpg" alt="" /></a></li>
+        <li><a href="#pic6"><img src="image/gallery/Picture6.jpg" alt="" /></a></li>
+        <li><a href="#pic7"><img src="image/gallery/Picture7.jpg"  alt="" /></a></li>
+        <li><a href="#slide3" class="next"><b>Next</b></a></li>
+      </ul>
+    </div>
+    <div id="slide3">
+      <ul>
+        <li><a href="#slide2" class="previous"><b>Previous</b></a></li>
+        <li><a href="#pic4"><img src="image/gallery/Picture4.jpg" alt="" /></a></li>
+        <li><a href="#pic5"><img src="image/gallery/Picture5.jpg" alt="" /></a></li>
+        <li><a href="#pic6"><img src="image/gallery/Picture6.jpg" alt="" /></a></li>
+        <li><a href="#pic8"><img src="image/gallery/Picture7.jpg"  alt="" /></a></li>
+        <li><a href="#pic9"><img src="image/gallery/Picture8.jpg" alt="" /></a></li>
+        <li><a href="#slide4" class="next"><b>Next</b></a></li>
+      </ul>
+    </div>
+    <div id="slide4">
+      <ul>
+        <li><a href="#slide3" class="previous"><b>Previous</b></a></li>
+        <li><a href="#pic5"><img src="image/gallery/Picture5.jpg" alt="" /></a></li>
+        <li><a href="#pic6"><img src="image/gallery/Picture6.jpg" alt="" /></a></li>
+        <li><a href="#pic7"><img src="image/gallery/Picture7.jpg"  alt="" /></a></li>
+        <li><a href="#pic8"><img src="image/gallery/Picture8.jpg" alt="" /></a></li>
+        <li><a href="#pic9"><img src="image/gallery/Picture9.jpg" alt="" /></a></li>
+        <li><a href="#slide5" class="next"><b>Next</b></a></li>
+      </ul>
+    </div>
+    <div id="slide5">
+      <ul>
+        <li><a href="#slide4" class="previous"><b>Previous</b></a></li>
+        <li><a href="#pic6"><img src="image/gallery/Picture6.jpg" alt="" /></a></li>
+        <li><a href="#pic7"><img src="image/gallery/Picture7.jpg"  alt="" /></a></li>
+        <li><a href="#pic8"><img src="image/gallery/Picture8.jpg" alt="" /></a></li>
+        <li><a href="#pic9"><img src="image/gallery/Picture9.jpg" alt="" /></a></li>
+        <li><a href="#pic10"><img src="image/gallery/Picture10.jpg" alt="" /></a></li>
+        <li><a href="#slide6" class="next"><b>Next</b></a></li>
+      </ul>
+    </div>
+    <div id="slide6">
+      <ul>
+        <li><a href="#slide5" class="previous"><b>Previous</b></a></li>
+        <li><a href="#pic7"><img src="image/gallery/Picture7.jpg"  alt="" /></a></li>
+        <li><a href="#pic8"><img src="image/gallery/Picture8.jpg" alt="" /></a></li>
+        <li><a href="#pic9"><img src="image/gallery/Picture9.jpg" alt="" /></a></li>
+        <li><a href="#pic10"><img src="image/gallery/Picture10.jpg" alt="" /></a></li>
+        <li><a href="#pic11"><img src="image/gallery/Picture11.jpg" alt="" /></a></li>
+        <li><img class="blank" src="image/gallery/downx.png" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+  <div id="fullsize">
+    <div id="pic2"> <img src="image/gallery/Picture2.jpg" alt=" " />
+    </div>
+    <div id="pic3"> <img src="image/gallery/Picture3.jpg" alt=" " />
+    </div>
+    <div id="pic4"> <img src="image/gallery/Picture4.jpg" alt="" />
+    </div>
+        <div id="pic5"> <img src="image/gallery/Picture5.jpg" alt="" />
+    </div>
+        <div id="pic6"> <img src="image/gallery/Picture6.jpg" alt="" />
+    </div>
+        <div id="pic7"> <img src="image/gallery/Picture7.jpg" alt="" />
+    </div>
+        <div id="pic8"> <img src="image/gallery/Picture8.jpg" alt="" />
+    </div>
+        <div id="pic9"> <img src="image/gallery/Picture9.jpg" alt="" />
+    </div>
+        <div id="pic10"> <img src="image/gallery/Picture10.jpg" alt="" />
+    </div>
+        <div id="pic11"> <img src="image/gallery/Picture11.jpg" alt="" />
+    </div>
+
+  </div>
+</div>
+ 
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <div id="footer">
+            <p>
+                Powered by <a href="Main.htm ">Cambridge China Development Forum</a>, University of Cambridge, England.</p>
+        </div>
+    </div>
+</body>
+</html>
